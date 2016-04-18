@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li>
+              <a href="hotels.html">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="img/center-logo.png" width="49" height="25" alt="logo">
+          </a>
+        </div>
+      </header>
+
+      <form>
+        <div class="list">
+          <h2>
+            Инфраструктура:
+          </h2>
+          <label>
+            <input type="checkbox" checked value="pool">
+              Бассейн
+          </label>
+          <label>
+            <input type="checkbox" value="parking">
+              Парковка
+          </label>
+          <label>
+            <input type="checkbox" value="wi-fi">
+              Wi-Fi
+          </label>
+        </div>
+
+        <div class="list">
+          <h2>
+            Тип жилья:
+          </h2>
+          <label>
+            <input type="checkbox" checked value="hotel">
+              Гостиница
+          </label>
+          <label>
+            <input type="checkbox" checked value="motel">
+              Мотель
+          </label>
+          <label>
+            <input type="checkbox" checked value="apartments">
+              Апартаменты
+          </label>
+        </div>
+
+        <div class="list">
+          <h2>
+            Стоимость в сутки (Р):
+          </h2>
+          <label>
+            от <input type="text" placeholder="0">
+          </label>
+          <label>
+            до <input type="text" placeholder="3000">
+          </label>
+          <label>
+            <input type="range" min="0" max="100" step="1" value="70">
+          </label>
+          <button type="submit">
+            Показать
+          </button>
+        </div>
+      </form>
+
+      <section class="sort">
+        <div class="sort-item">
+          <h3>
+            Найдено:
+          </h3>
+        </div>
+
+        <div class="sort-type">
+          <span>
+            Сортировка:
+          </span>
+          <ul>
+            <li>
+              <a href="#">
+                По цене
+              </a
+            </li>
+            <li>
+              <a href="#">
+                По типу
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                По рейтингу
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sort-item">
+          <ul>
+            <li>
+              <a href="#">
+                <i> </i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <i> </i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="hotels">
+        <article class="hotel-item">
+          <div class="hotel-image">
+            <img src="img/amara.png" width="136" height="90" alt="amara resort">
+          </div>
+          <div class="hotel-name">
+            <h1>
+              <a href="#">
+                Amara resort &amp; SPA
+              </a>
+            </h1>
+            <div class="hotel-type">
+              <span>
+                Гостиница
+              </span>
+              <a href="#">
+                Подробнее
+              </a>
+            </div>
+            <div class="hotel-price">
+              <span>
+                От 3500 р.
+              </span>
+              <a href="#">
+                Забронировать
+              </a>
+            </div>
+          </div>
+          <div class="hotel-rating">
+            <i></i> <i></i> <i></i> <i></i>
+            <span>
+              Рейтинг: 8,5
+            </span>
+          </div>
+        </article>
+
+        <article class="hotel-item">
+          <div class="hotel-image">
+            <img src="img/desert-quail.png" width="136" height="90" alt="amara resort">
+          </div>
+          <div class="hotel-name">
+            <h1>
+              <a href="#">
+                Desert Quail Inn
+              </a>
+            </h1>
+            <div class="hotel-type">
+              <span>
+                Мотель
+              </span>
+              <a href="#">
+                Подробнее
+              </a>
+            </div>
+            <div class="hotel-price">
+              <span>
+                От 2000 р.
+              </span>
+              <a href="#">
+                Забронировать
+              </a>
+            </div>
+          </div>
+          <div class="hotel-rating">
+            <i></i> <i></i>
+              <span>
+                Рейтинг: 8,9
+              </span>
+          </div>
+        </article>
+
+        <article class="hotel-item">
+          <div class="hotel-image">
+            <img src="img/villas.png" width="136" height="90" alt="amara resort">
+          </div>
+          <div class="hotel-name">
+            <h1>
+              <a href="#">
+                Villas at Poco Diablo
+              </a>
+            </h1>
+            <div class="hotel-type">
+              <span>
+                Апартаменты
+              </span>
+              <a href="#">
+                Подробнее
+              </a>
+            </div>
+            <div class="hotel-price">
+              <span>
+                От 4000 р.
+              </span>
+              <a href="#">
+                Забронировать
+              </a>
+            </div>
+          </div>
+          <div class="hotel-rating">
+            <i></i> <i></i> <i></i>
+            <span>
+              Рейтинг: 9,2
+            </span>
+          </div>
+        </article>
+      </section>
+
+      <footer>
+        <div class="hashtag">
+          <a href="#">#VISITSEDONA</a>
+        </div>
+        <div class=social-item>
+          <a href="#"></a>
+          <a href="#">f</a>
+          <a href="#"></a>
+        </div>
+        <div class="academy">
+          <a href="https://htmlacademy.ru/">
+            website by <img src="img/academy-logo.png" width="" height="" alt="academy-logo">
+          </a>
+        </div>
+      </footer>
+
+    </div>
+  </body>
+</html>
