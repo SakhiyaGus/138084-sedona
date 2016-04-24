@@ -22,3 +22,35 @@ h3 {
   font-size: 30px;
   font-weight: bold;
 }
+
+.reasons, .services {
+  font-size: 0px;
+}
+
+.reasons-item {
+  background: red;
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  min-height: 256px;
+  font-size: 14px;
+  text-align: center;
+
+}
+
+.reasons-image {
+  background: yellow;
+  display: inline-block;
+  min-height: 256px;
+  vertical-align: top;
+
+}
+
+.services-item {
+  background: green;
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+}
