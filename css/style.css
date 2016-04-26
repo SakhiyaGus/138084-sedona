@@ -23,16 +23,34 @@ h3 {
   font-weight: bold;
 }
 
+.container {
+  margin: 0 auto;
+}
+
+
+ul {
+  font-size: 0;
+}
+
+li {
+  font-size: 14px;
+  display: inline-block;
+  width: 300px;
+}
+
+.wellcome {
+  background: yellow;
+}
+
 .reasons, .services {
   font-size: 0px;
 }
 
 .reasons-item {
-  background: red;
+  background: orange;
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  min-height: 256px;
   font-size: 14px;
   text-align: center;
 
@@ -41,7 +59,6 @@ h3 {
 .reasons-image {
   background: yellow;
   display: inline-block;
-  min-height: 256px;
   vertical-align: top;
 
 }
@@ -53,4 +70,104 @@ h3 {
   width: 400px;
   font-size: 14px;
   text-align: center;
+}
+
+.features-lists, .sort {
+  font-size: 0px;
+}
+
+.list {
+  background: blue;
+  display: inline-block;
+  vertical-align: top;
+  width: 300px;
+  font-size: 14px;
+}
+
+.list:nth-child(3) {
+  width: 600px;
+}
+
+.list label {
+  display: block;
+}
+
+.list:nth-child(3) label {
+  display: inline-block;
+}
+
+.list:nth-child(3) label:nth-child(3) {
+  display: block;
+}
+
+button {
+  display: block;
+}
+
+.sort-item {
+  background: green;
+  display: inline-block;
+  vertical-align: top;
+  width: 235px;
+  font-size: 14px;
+}
+
+.sort-item:nth-child(2) {
+  width: 730px;
+}
+
+.sort-item li {
+  width: 150px;
+}
+
+.hotel-item {
+  font-size: 0px;
+}
+
+.hotel-image {
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+}
+
+.hotel-name {
+  background:yellow;
+  display: inline-block;
+  vertical-align: top;
+  width: 400px;
+  font-size: 14px;
+}
+
+.hotel-type {
+  background:red;
+  display: inline-block;
+  vertical-align: top;
+  width: 200px;
+  font-size: 10px;
+}
+
+.hotel-type a {
+  display: block;
+}
+
+.hotel-price {
+  background: cyan;
+  display: inline-block;
+  vertical-align: top;
+  width: 120px;
+  font-size: 10px;
+}
+
+.hotel-price a {
+  display: block;
+}
+
+.hotel-rating {
+  background: pink;
+  display: inline-block;
+  vertical-align: top;
+  width: 600px;
+  text-align: right;
+  padding-right: 30px;
+  font-size: 10px;
 }
