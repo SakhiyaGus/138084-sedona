@@ -135,14 +135,17 @@ button {
 
 .sort-item {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 235px;
   font-size: 14px;
   padding-left: 73px;
+  padding-bottom: 0;
+  padding-top: 12px;
 }
 
 .sort-item h3 {
   font-size: 21px;
+  width: 164px;
 }
 
 .sort-item:nth-child(2) {
@@ -191,7 +194,7 @@ button {
   width: 280px;
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
+  line-height: 21px;
   padding-top: 12px;
 
 }
@@ -202,7 +205,7 @@ button {
   width: 110px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 21px;
+  line-height: 14px;
 }
 
 .hotel-price {
@@ -211,7 +214,7 @@ button {
   width: 142px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 21px;}
+  line-height: 14px;}
 
 .hotel-type a, .hotel-price a {
   display: block;
