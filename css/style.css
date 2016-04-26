@@ -33,6 +33,7 @@ ul {
   margin: 0;
   padding: 0;
   text-align: center;
+  min-height: 56px;
 }
 
 li {
@@ -73,14 +74,12 @@ li {
   text-align: center;
   padding-top: 55px;
   padding-bottom: 55px;
-
 }
 
 .reasons-image {
   display: inline-block;
   vertical-align: top;
   line-height: 0;
-
 }
 
 .services-item {
@@ -97,13 +96,16 @@ li {
 
 .features-lists {
   background: url(../img/background-hotels.jpg);
+  padding-top: 14px;
+  padding-left: 73px;
 }
 
 .list {
   display: inline-block;
   vertical-align: top;
-  width: 300px;
+  width: 227px;
   font-size: 14px;
+  color: white;
 }
 
 .list:nth-child(3) {
@@ -112,6 +114,7 @@ li {
 
 .list label {
   display: block;
+  padding: 10px;
 }
 
 .list:nth-child(3) label {
@@ -135,10 +138,15 @@ button {
   vertical-align: middle;
   width: 235px;
   font-size: 14px;
+  padding-left: 73px;
+}
+
+.sort-item h3 {
+  font-size: 21px;
 }
 
 .sort-item:nth-child(2) {
-  width: 730px;
+  width: 630px;
 }
 
 .sort-item li {
@@ -162,53 +170,67 @@ button {
 .hotel-item {
   font-size: 0px;
   border-bottom: 1px solid #e5e5e5;
+  padding: 0;
+  margin: 0;
+
 }
 
 .hotel-image {
   display: inline-block;
   vertical-align: middle;
-  width: 200px;
+  width: 204px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 73px;
+
 }
 
 .hotel-name {
   display: inline-block;
   vertical-align: top;
-  width: 400px;
+  width: 280px;
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  padding-top: 12px;
 
 }
 
 .hotel-type {
   display: inline-block;
   vertical-align: top;
-  width: 200px;
+  width: 110px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
 }
 
-.hotel-type a {
-  display: block;
-}
-
 .hotel-price {
   display: inline-block;
   vertical-align: top;
-  width: 120px;
+  width: 142px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;}
 
-.hotel-price a {
+.hotel-type a, .hotel-price a {
   display: block;
+  background: #766357;
+  color: white;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 6px;
+  padding-bottom: 2px;
+  margin-top: 10px;
+}
+.hotel-type a {
+  background: #81b3d2;
 }
 
 .hotel-rating {
   display: inline-block;
   vertical-align: top;
-  width: 600px;
+  width: 182px;
   text-align: right;
   padding-right: 30px;
   font-weight: normal;
