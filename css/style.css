@@ -141,11 +141,7 @@ button {
 
 }
 
-.hotel-image {
-  display: inline-block;
-  vertical-align: middle;
-  width: 200px;
-}
+.hotel-image
 
 .hotel-name {
   display: inline-block;
