@@ -24,9 +24,9 @@ h3 {
 }
 
 .container {
+  width: 1200px;
   margin: 0 auto;
 }
-
 
 ul {
   font-size: 0;
@@ -37,34 +37,45 @@ li {
   display: inline-block;
   width: 300px;
 }
-
+.logo {
+  width: 138px;
+  margin: 0 auto;
+}
 .wellcome {
-  background: yellow;
+  background-image: url(../img/background-image.jpg);
+  background-position: 0 37%;
+  text-align: center;
+  padding-top: 76px;
 }
 
+.plain-text {
+  background: white;
+  padding-top: 20px;
+}
 .reasons, .services {
   font-size: 0px;
+  height: 256px;
 }
 
 .reasons-item {
-  background: orange;
+  background: #81b3d2;
   display: inline-block;
   vertical-align: top;
   width: 400px;
   font-size: 14px;
   text-align: center;
+  padding-top: 55px;
+  padding-bottom: 55px;
 
 }
 
 .reasons-image {
-  background: yellow;
   display: inline-block;
   vertical-align: top;
 
 }
 
 .services-item {
-  background: green;
   display: inline-block;
   vertical-align: top;
   width: 400px;
@@ -76,8 +87,11 @@ li {
   font-size: 0px;
 }
 
+.features-lists {
+  background: url(../img/background-hotels.jpg);
+}
+
 .list {
-  background: blue;
   display: inline-block;
   vertical-align: top;
   width: 300px;
@@ -103,9 +117,10 @@ li {
 button {
   display: block;
 }
-
+.sort {
+  border-bottom: 1px solid #e5e5e5;
+}
 .sort-item {
-  background: green;
   display: inline-block;
   vertical-align: top;
   width: 235px;
@@ -122,28 +137,33 @@ button {
 
 .hotel-item {
   font-size: 0px;
+  border-bottom: 1px solid #e5e5e5;
+
 }
 
 .hotel-image {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 200px;
 }
 
 .hotel-name {
-  background:yellow;
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  font-size: 14px;
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 26px;
+
 }
 
 .hotel-type {
-  background:red;
   display: inline-block;
   vertical-align: top;
   width: 200px;
-  font-size: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
 }
 
 .hotel-type a {
@@ -151,23 +171,50 @@ button {
 }
 
 .hotel-price {
-  background: cyan;
   display: inline-block;
   vertical-align: top;
   width: 120px;
-  font-size: 10px;
-}
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;}
 
 .hotel-price a {
   display: block;
 }
 
 .hotel-rating {
-  background: pink;
   display: inline-block;
   vertical-align: top;
   width: 600px;
   text-align: right;
   padding-right: 30px;
-  font-size: 10px;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+a:link {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer {
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 0;
+}
+
+footer div {
+  display: inline-block;
+  width: 400px;
+  font-size: 14px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.hashtag {
+  font-family: PT Sans;
+  font-size: 21px;
+  font-weight: bold;
+  color: black;
 }
