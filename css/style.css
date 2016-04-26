@@ -30,17 +30,25 @@ h3 {
 
 ul {
   font-size: 0;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 li {
   font-size: 14px;
   display: inline-block;
+  vertical-align: middle;
   width: 300px;
 }
 .logo {
   width: 138px;
-  margin: 0 auto;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
 }
+
 .wellcome {
   background-image: url(../img/background-image.jpg);
   background-position: 0 37%;
@@ -54,7 +62,6 @@ li {
 }
 .reasons, .services {
   font-size: 0px;
-  height: 256px;
 }
 
 .reasons-item {
@@ -72,6 +79,7 @@ li {
 .reasons-image {
   display: inline-block;
   vertical-align: top;
+  line-height: 0;
 
 }
 
@@ -108,6 +116,7 @@ li {
 
 .list:nth-child(3) label {
   display: inline-block;
+  vertical-align: middle;
 }
 
 .list:nth-child(3) label:nth-child(3) {
@@ -120,9 +129,10 @@ button {
 .sort {
   border-bottom: 1px solid #e5e5e5;
 }
+
 .sort-item {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   width: 235px;
   font-size: 14px;
 }
@@ -135,13 +145,30 @@ button {
   width: 150px;
 }
 
+.sort a:link {
+  font-size: 3,42px;
+  line-height: 5,13px;
+  color: #cacaca;
+  border-bottom: 1px dotted #81b3d2;
+}
+
+.sort a:active {
+  font-size: 3,42px;
+  line-height: 5,13px;
+  color: #c2d8e7;
+  text-decoration: none;
+}
+
 .hotel-item {
   font-size: 0px;
   border-bottom: 1px solid #e5e5e5;
-
 }
 
-.hotel-image
+.hotel-image {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+}
 
 .hotel-name {
   display: inline-block;
@@ -189,6 +216,12 @@ button {
   line-height: 21px;
 }
 
+.map {
+  background: url(../img/map.jpg);
+  border: 0;
+  width: 1200px;
+  min-height: 594px;
+}
 a:link {
   text-decoration: none;
   color: inherit;
@@ -199,17 +232,17 @@ footer {
   font-size: 0;
 }
 
-footer div {
+.hashtag, .social-item, .academy {
   display: inline-block;
+  vertical-align: middle;
   width: 400px;
   font-size: 14px;
   text-align: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 48px;
+  padding-bottom: 48px;
 }
 
 .hashtag {
-  font-family: PT Sans;
   font-size: 21px;
   font-weight: bold;
   color: black;
