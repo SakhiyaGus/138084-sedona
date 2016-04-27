@@ -55,11 +55,12 @@ li {
   background-position: 0 37%;
   text-align: center;
   padding-top: 76px;
+  height: 409px;
 }
 
 .plain-text {
   background: white;
-  padding-top: 20px;
+  padding-top: 0px;
 }
 .reasons, .services {
   font-size: 0px;
@@ -107,9 +108,15 @@ li {
   font-size: 14px;
   color: white;
 }
-
+.list:nth-child(1) {
+  width: 239px;
+}
+.list:nth-child(2) {
+  width:473px;
+  padding-left: 15px;
+}
 .list:nth-child(3) {
-  width: 600px;
+  width: 400px;
 }
 
 .list label {
@@ -126,6 +133,10 @@ li {
   display: block;
 }
 
+.list h2 {
+  font-size: 16px;
+}
+
 button {
   display: block;
 }
@@ -134,7 +145,6 @@ button {
 }
 
 .sort-item {
-  outline: 1px dotted cyan;
   display: inline-block;
   vertical-align: top;
   text-align: left;
@@ -158,12 +168,11 @@ button {
   font-size: 0px;
 }
 .sort-item li {
-  outline: 1px dotted cyan;
   display: inline-block;
   vertical-align: top;
   width: 180px;
   font-size: 14px;
-  padding-top: 24px;
+  padding-top: 20px;
 }
 
 .sort-item i {
@@ -194,7 +203,7 @@ button {
 .hotel-image {
   display: inline-block;
   vertical-align: middle;
-  width: 204px;
+  width: 187px;
   padding-top: 30px;
   padding-bottom: 30px;
   padding-left: 73px;
@@ -209,7 +218,6 @@ button {
   font-size: 21px;
   line-height: 21px;
   padding-top: 12px;
-
 }
 
 .hotel-name a {
