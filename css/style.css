@@ -191,12 +191,16 @@ button {
 .hotel-name {
   display: inline-block;
   vertical-align: top;
-  width: 280px;
+  width: 782px;
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   padding-top: 12px;
 
+}
+
+.hotel-name a {
+  color: black;
 }
 
 .hotel-type {
@@ -220,11 +224,12 @@ button {
   display: block;
   background: #766357;
   color: white;
+  font-weight: bold;
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 6px;
   padding-bottom: 2px;
-  margin-top: 10px;
+  margin-top: 20px;
 }
 .hotel-type a {
   background: #81b3d2;
@@ -232,15 +237,22 @@ button {
 
 .hotel-rating {
   display: inline-block;
-  vertical-align: top;
-  width: 182px;
-  text-align: right;
-  padding-right: 30px;
+  vertical-align: middle;
+  background: #f2f2f2;
+  padding-top: 8px;
+  padding-bottom: 6px;
+  padding-left: 16px;
+  padding-right: 13px;
+  text-align: center;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
 }
+.hotel-rating span {
+  color: #666666;
 
+
+}
 .map {
   background: url(../img/map.jpg);
   border: 0;
@@ -249,7 +261,6 @@ button {
 }
 a:link {
   text-decoration: none;
-  color: inherit;
 }
 
 footer {
