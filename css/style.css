@@ -52,16 +52,33 @@ li {
 
 .wellcome {
   background-image: url(../img/background-image.jpg);
-  background-position: 0 37%;
+  background-position: 0 29%;
   text-align: center;
   padding-top: 76px;
-  height: 409px;
+  height: 433px;
+}
+
+.wellcome img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;}
+
+.wellcome-bottom {
+  margin-top: 24px;
 }
 
 .plain-text {
   background: white;
-  padding-top: 0px;
+  text-align: center;
+  padding-top: 46px;
+  padding-bottom: 36px;
 }
+
+.plain-text p {
+  padding-top: 14px;
+}
+
+
 .reasons, .services {
   font-size: 0px;
 }
@@ -73,9 +90,50 @@ li {
   width: 400px;
   font-size: 14px;
   text-align: center;
-  padding-top: 55px;
-  padding-bottom: 55px;
+  padding-top: 40px;
+  padding-bottom: 38px;
 }
+
+.reasons-item h2, .reasons-item span, .reasons-item p {
+  display: block;
+}
+
+.reasons-item span {
+  padding-top: 4px;
+  color: white;
+}
+
+.reasons-item p {
+  padding-top: 6px;
+  color: white;
+}
+
+.reasons-grey {
+  background: #eeeeee;
+  color: black;
+  padding-top: 32px;
+  padding-bottom:44px;
+}
+
+.reasons-grey h2, .reasons-grey span, .reasons-grey p {
+  display: block;
+  color: black;
+}
+
+.reasons-grey h2 {
+
+}
+
+.reasons-grey span {
+  padding-top: 4px;
+  color: black;
+}
+
+.reasons-grey p {
+  padding-top: 6px;
+  color: white;
+}
+
 
 .reasons-image {
   display: inline-block;
@@ -87,8 +145,18 @@ li {
   display: inline-block;
   vertical-align: top;
   width: 400px;
+  height: 330px;
   font-size: 14px;
   text-align: center;
+}
+
+.search {
+  padding-top: 33px;
+  text-align: center;
+}
+
+.search p {
+  line-height: 24px;
 }
 
 .features-lists, .sort {
