@@ -26,6 +26,7 @@ h3 {
 .container {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 0 40px rgba(0,0,0,0.3);
 }
 
 ul {
@@ -131,7 +132,7 @@ li {
 
 .reasons-grey p {
   padding-top: 6px;
-  color: white;
+  color: black;
 }
 
 
@@ -176,13 +177,16 @@ li {
   font-size: 14px;
   color: white;
 }
+
 .list:nth-child(1) {
   width: 239px;
 }
+
 .list:nth-child(2) {
   width:473px;
   padding-left: 15px;
 }
+
 .list:nth-child(3) {
   width: 400px;
 }
@@ -229,12 +233,14 @@ button {
 .sort-item:nth-of-type(3) {
   width: 105px;
 }
+
 .sort-item ul {
   margin: 0;
   padding: 0;
   text-align: left;
   font-size: 0px;
 }
+
 .sort-item li {
   display: inline-block;
   vertical-align: top;
@@ -246,6 +252,7 @@ button {
 .sort-item i {
   width: 35px;
 }
+
 .sort a:link {
   font-size: 3,42px;
   line-height: 5,13px;
@@ -307,7 +314,8 @@ button {
   width: 142px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;}
+  line-height: 14px;
+}
 
 .hotel-type a, .hotel-price a {
   display: block;
