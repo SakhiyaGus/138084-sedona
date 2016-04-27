@@ -134,28 +134,41 @@ button {
 }
 
 .sort-item {
+  outline: 1px dotted cyan;
   display: inline-block;
   vertical-align: top;
-  width: 235px;
+  text-align: left;
   font-size: 14px;
-  padding-left: 73px;
-  padding-bottom: 0;
   padding-top: 12px;
 }
 
 .sort-item h3 {
   font-size: 21px;
-  width: 164px;
+  width: 183px;
+  padding-left: 73px;
 }
 
-.sort-item:nth-child(2) {
-  width: 630px;
+.sort-item:nth-of-type(3) {
+  width: 105px;
 }
-
+.sort-item ul {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  font-size: 0px;
+}
 .sort-item li {
-  width: 150px;
+  outline: 1px dotted cyan;
+  display: inline-block;
+  vertical-align: top;
+  width: 180px;
+  font-size: 14px;
+  padding-top: 24px;
 }
 
+.sort-item i {
+  width: 35px;
+}
 .sort a:link {
   font-size: 3,42px;
   line-height: 5,13px;
