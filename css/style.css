@@ -33,15 +33,27 @@ ul {
   font-size: 0;
   margin: 0;
   padding: 0;
-  text-align: center;
+  text-align: left;
   min-height: 56px;
 }
 
 li {
   font-size: 14px;
+  font-style: bold;
   display: inline-block;
   vertical-align: middle;
   width: 300px;
+}
+
+.main-navigation > ul > li > a {
+  outline: 1px dotted cyan;
+  color: black;
+  display: block;
+  padding-top: 18px;
+  padding-left: 73px;
+}
+.main-navigation > ul > li:nth-child(2) {
+  padding-left: 0;
 }
 .logo {
   width: 138px;
@@ -142,6 +154,12 @@ li {
   line-height: 0;
 }
 
+.services h2 {
+  color: black;
+  margin-top: 25px;
+  margin-bottom: 24px;
+}
+
 .services-item {
   display: inline-block;
   vertical-align: top;
@@ -149,8 +167,26 @@ li {
   height: 330px;
   font-size: 14px;
   text-align: center;
+
 }
 
+.services-icon {
+  width: 74px;
+  height: 80px;
+  margin-left: 163px;
+  margin-top: 58px;
+  background-image: url(../img/services-icon.png);
+  background-repeat: no-repeat;
+}
+
+.icon-house {
+  background-position: -75px 1px;
+}
+
+.icon-present {
+  margin-left: 167px;
+  background-position: -152px -1px;
+}
 .search {
   padding-top: 33px;
   text-align: center;
