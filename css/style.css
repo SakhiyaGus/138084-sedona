@@ -417,27 +417,32 @@ button {
   text-transform: uppercase;
 }
 
+.sort a:hover {
+  color: #89b8d5;
+  border-bottom: 1px dotted #81b3d2;
+}
+
 .sort a:active {
-  font-size: 12px;
-  line-height: 18px;
-  color: #c2d8e7;
-  text-transform: uppercase;
+  color: black;
+  border-bottom: 0px;
 }
 
 .hotel-item {
+  outline: 1px dotted blue;
   font-size: 0px;
   border-bottom: 1px solid #e5e5e5;
   padding: 0;
   margin: 0;
-
 }
 
 .hotel-image {
+  outline: 1px dotted cyan;
+
   display: inline-block;
   vertical-align: middle;
-  width: 187px;
+  width: 165px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   padding-left: 73px;
 
 }
@@ -449,7 +454,7 @@ button {
   font-weight: bold;
   font-size: 21px;
   line-height: 21px;
-  padding-top: 12px;
+  padding-top: 11px;
 }
 
 .hotel-name a {
@@ -465,6 +470,8 @@ button {
 }
 
 .hotel-type {
+  outline: 1px dotted red;
+
   display: inline-block;
   vertical-align: top;
   width: 110px;
@@ -474,6 +481,8 @@ button {
 }
 
 .hotel-price {
+  outline: 1px dotted pink;
+
   display: inline-block;
   vertical-align: top;
   width: 142px;
@@ -498,6 +507,8 @@ button {
 }
 
 .hotel-rating {
+  outline: 1px dotted brown;
+
   display: inline-block;
   vertical-align: middle;
   background: #f2f2f2;
@@ -569,12 +580,30 @@ footer {
 }
 
 .academy a {
+  display: block;
+  width: 195px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
   color: black;
+  text-align: left;
+  padding-top: 7px;
+  padding-bottom: 6px;
+  margin-left: 102px;
+  margin-top: 4px;
+  background-image: url(../img/academy-logo.png);
+  background-repeat: no-repeat;
+  background-position: 82 0;
 }
 
-.academy img {
-  vertical-align: middle;
+.academy a:hover {
+  background-image: url(../img/academy-logo.png);
+  background-repeat: no-repeat;
+  background-position: 82 -39;
+}
+
+.academy a:active {
+  background-image: url(../img/academy-logo.png);
+  background-repeat: no-repeat;
+  background-position: 82 -78;
 }
