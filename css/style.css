@@ -561,23 +561,38 @@ footer {
   margin-right: 6px;
 }
 
-.social-item a:hover {
-  background-image: url(../img/social-icon-hov.png);
-  background-repeat: no-repeat;
+.social-tw:hover {
+  background-position: -46px 0;
 }
 
-.social-item a:active {
-  background-image: url(../img/social-icon-act.png);
-  background-repeat: no-repeat;
+.social-tw:hover {
+  background-position: -92px 0;
 }
 
 .social-fb {
-  background-position: 0px -48px;
+  background-position: 0 -48px;
+}
+
+.social-fb:hover {
+  background-position: -46px -48px;
+}
+
+.social-fb:active {
+  background-position: -92px -48px;
 }
 
 .social-youtube {
-  background-position: 0px -96px;
+  background-position: 0 -96px;
 }
+
+.social-youtube:hover {
+  background-position: -46px -96px;
+}
+
+.social-youtube:active {
+  background-position: -92px -96px;
+}
+
 
 .academy a {
   display: block;
