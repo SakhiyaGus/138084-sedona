@@ -60,8 +60,12 @@ li {
   color: #81b3d2;
 }
 
+.main-navigation a:active {
+  color: #cfc9c6;
+}
+
 .main-navigation a:visited {
-  color: #cecece;
+  color: #eeeeee;
 }
 
 .logo {
@@ -73,7 +77,7 @@ li {
 }
 
 .wellcome {
-  background-image: url(../img/background-image.jpg);
+  background: #e2eff8 url(../img/background-image.jpg);
   background-position: 0 29%;
   text-align: center;
   padding-top: 76px;
@@ -163,7 +167,7 @@ li {
 .services h2 {
   color: black;
   margin-top: 163px;
-  margin-bottom: 24px;
+  margin-bottom: 23px;
 }
 
 .services-item {
@@ -173,18 +177,28 @@ li {
   width: 400px;
   font-size: 14px;
   text-align: center;
+  padding-bottom: 67px;
 }
 .services-item::before {
-  outline: 1px solid cyan;
   content: "";
   position: absolute;
-  top: 60px;
+  top: 58px;
   left: 163px;
   width: 75px;
   height: 75px;
   background-image: url(../img/services-icon.png);
+  background-repeat: no-repeat;
 }
 
+.services-item:nth-child(2)::before {
+  background-position: -75px 1px;
+}
+
+.services-item:nth-child(3)::before {
+  width: 64px;
+  margin-left: 4px;
+  background-position: -150px 0px;
+}
 .search {
   padding-top: 33px;
   text-align: center;
@@ -199,44 +213,36 @@ li {
 }
 
 .features-lists {
-  background: url(../img/background-hotels.jpg);
+  background: #63696f url(../img/background-hotels.jpg);
   padding-top: 14px;
-  padding-left: 73px;
 }
 
 .list {
   display: inline-block;
   vertical-align: top;
-  width: 227px;
+  width: 240px;
   font-size: 14px;
+  line-height: 21px;
   color: white;
 }
 
 .list:nth-child(1) {
-  width: 239px;
+  padding-left: 73px;
 }
 
 .list:nth-child(2) {
-  width:473px;
   padding-left: 15px;
 }
 
 .list:nth-child(3) {
   width: 400px;
+  margin-left: 232px;
 }
 
 .list label {
   display: block;
-  padding: 10px;
-}
-
-.list:nth-child(3) label {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.list:nth-child(3) label:nth-child(3) {
-  display: block;
+  padding-top: 12px;
+  padding-bottom: 13px;
 }
 
 .list h2 {
@@ -333,6 +339,14 @@ button {
   color: black;
 }
 
+.hotel-name a:hover {
+  color: #c3dbe9;
+}
+
+.hotel-name a:active {
+  color: #eeeeee;
+}
+
 .hotel-type {
   display: inline-block;
   vertical-align: top;
@@ -395,23 +409,70 @@ a:link {
 }
 
 footer {
-  position: absolute;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 0;
 }
 
 .hashtag, .social-item, .academy {
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
   width: 400px;
-  font-size: 14px;
   text-align: center;
-  padding-top: 48px;
-  padding-bottom: 48px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.hashtag {
+.hashtag a {
+  outline: 1px solid cyan;
+  display: block;
   font-size: 21px;
+  line-height: 26px;
   font-weight: bold;
   color: black;
+  margin-top: 10px;
+}
+
+.social-item {
+  outline: 1px solid cyan;
+
+}
+.social-item a {
+  outline: 1px solid cyan;
+  display: inline-block;
+  vertical-align: top;
+  width: 46px;
+  height: 48px;
+  background-image: url(../img/social-icon.png);
+  background-repeat: no-repeat;
+  margin-right: 6px;
+  opacity: 0.8;
+}
+
+.social-item a:hover {
+  background-image: url(../img/social-icon-hov.png);
+  background-repeat: no-repeat;
+}
+
+.social-item a:active {
+  background-image: url(../img/social-icon-act.png);
+  background-repeat: no-repeat;
+}
+
+.social-fb {
+  background-position: 0px -48px;
+}
+
+.social-youtube {
+  background-position: 0px -96px;
+}
+.academy a {
+  outline: 1px solid cyan;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+  color: black;
+}
+
+.academy img {
+  vertical-align: middle;
 }
