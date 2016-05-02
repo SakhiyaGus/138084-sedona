@@ -181,21 +181,31 @@
             <form>
               <label>
                 Дата заезда:
-                <input type="date" name="check-in" placeholder="24 апреля 2016">
+                <input class="search-date" type="date" name="check-in" placeholder="24 апреля 2016">
+                <span class="search-calender"></span>
               </label>
               <label>
                 Дата выезда:
-                <input type="date" name="check-out" placeholder="4 июля 2016">
+                <input class="search-date" type="date" name="check-out" placeholder="4 июля 2016">
+                <span class="search-calender"></span>
               </label>
               <label>
+                <span class="search-adults">
                 Взрослые:
-                <input type="number" name="adults" placeholder="2">
+              </span>
+                <button class="search-minus"></button>
+                <input class="search-person" type="text" name="adults" placeholder="2">
+                <button class="search-plus"></button>
               </label>
               <label>
+              <span class="search-child">
                 Дети:
-                <input type="number" name="children" placeholder="0">
+              </span>
+                <button class="search-minus"></button>
+                <input class="search-person" type="text" name="children" placeholder="0">
+                <button class="search-plus"></button>
               </label>
-              <button>
+              <button class="search-find">
                 Найти
               </button>
             </form>

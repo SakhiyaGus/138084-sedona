@@ -1,3 +1,12 @@
+@font-face {
+  font-weight: normal;
+  font-style: normal;
+
+  font-family: "symbols-sedona";
+  src: url("../fonts/symbols-sedona.woff") format("woff"),
+       url("../fonts/symbols-sedona.woff2") format("woff2");
+}
+
 body {
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -233,7 +242,7 @@ li {
 
 .search-text a {
   display: block;
-  width: 570px;
+  width: 566px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -241,7 +250,7 @@ li {
   background: #766357;
   margin-left: 315px;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 32px;
 }
 .map {
   position: relative;
@@ -249,73 +258,113 @@ li {
 .search-form {
   position: absolute;
   top: 0px;
-  outline: 1px dotted red;
   background: white;
-  width: 570px;
+  width: 511px;
   margin-left: 315px;
-  padding-top: 62px;
+  padding-top: 54px;
   padding-bottom: 52px;
+  padding-left: 55px;
+  box-shadow: 0 0 10px 0 rgba (0,0,0,0.7);
 }
 
 .search-form label {
-  outline: 1px dotted cyan;
   display: inline-block;
-  vertical-align: top;
+  vertical-align: middle;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 38px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 35px;
-}
-
-.search-form label:nth-child(1) {
-  width: 458px;
-  text-align: left;
-  margin-left: 55px;
-}
-
-.search-form label:nth-child(2) {
-  width: 458px;
-  text-align: left;
-  margin-left: 53px;
-}
-
-.search-form label:nth-child(3) {
-  width: 228px;
-  margin-left: 55px;
-}
-
-.search-form label:nth-child(4) {
-  width: 278px;
-  text-align: left;
+  margin-bottom: 29px;
 }
 
 .search-form input {
   display: inline-block;
   vertical-align: top;
-  width: 115px;
   background: #f2f2f2;
+  border: none;
   font-size: 14px;
-  line-height: 26px;
+  line-height: 36px;
   font-weight: bold;
   text-transform: uppercase;
   color: black;
+}
+
+.search-date {
+  width: 328px;
+  padding-left: 16px;
   margin-left: 20px;
 }
 
+.search-person {
+  width: 40px;
+  margin-left: -4px;
+  text-align: center;
+}
 
-.search-form button {
+button.search-minus, button.search-plus {
+  display: inline-block;
+  vertical-align: top;
+  width: 38px;
+  height: 38px;
+  background-image: url(../img/plus-minus.png);
+  background-repeat: no-repeat;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+button.search-minus {
+  margin-left: 25px;
+  background-position: -38px 0;
+}
+
+button.search-minus:hover {
+  background-position: -38px -38px;
+}
+
+button.search-minus:active {
+  background-position: -38px -76px;
+}
+
+button.search-plus {
+  margin-left: -4px;
+  margin-right: 20px;
+}
+
+button.search-plus:hover {
+  background-position: 0 -38;
+}
+
+button.search-plus:active {
+  background-position: 0 -76px;
+}
+
+span.search-adults {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 14px;
+}
+
+span.search-child {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 22px;
+}
+
+button.search-find {
   width: 460px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  margin-top: 26px;
   background: #81b3d2;
+  border: none;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
   text-transform: uppercase;
   color: white;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  margin-top: 18px;
-  margin-left: 56px;
 }
 
 .features-lists, .sort {
