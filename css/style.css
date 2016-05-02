@@ -243,14 +243,12 @@ li {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-
 .map {
-  background: url(../img/map.jpg);
-  width: 1200px;
-  min-height: 473px;
+  position: relative;
 }
-
 .search-form {
+  position: absolute;
+  top: 0px;
   outline: 1px dotted red;
   background: white;
   width: 570px;
@@ -525,11 +523,11 @@ button {
   color: #666666;
 }
 
-
-
 footer {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 0;
+  position: absolute;
+  margin-top: -126;
 }
 
 .hashtag, .social-item, .academy {
@@ -592,7 +590,6 @@ footer {
 .social-youtube:active {
   background-position: -92px -96px;
 }
-
 
 .academy a {
   display: block;
