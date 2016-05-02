@@ -97,7 +97,8 @@ li {
 }
 
 .plain-text p {
-  padding-top: 14px;
+  line-height: 26px;
+  padding-top: 13px;
 }
 
 
@@ -142,10 +143,6 @@ li {
   color: black;
 }
 
-.reasons-grey h2 {
-
-}
-
 .reasons-grey span {
   padding-top: 4px;
   color: black;
@@ -165,37 +162,29 @@ li {
 
 .services h2 {
   color: black;
-  margin-top: 25px;
+  margin-top: 163px;
   margin-bottom: 24px;
 }
 
 .services-item {
+  position: relative;
   display: inline-block;
   vertical-align: top;
   width: 400px;
-  height: 330px;
   font-size: 14px;
   text-align: center;
-
 }
-
-.services-icon {
-  width: 74px;
-  height: 80px;
-  margin-left: 163px;
-  margin-top: 58px;
+.services-item::before {
+  outline: 1px solid cyan;
+  content: "";
+  position: absolute;
+  top: 60px;
+  left: 163px;
+  width: 75px;
+  height: 75px;
   background-image: url(../img/services-icon.png);
-  background-repeat: no-repeat;
 }
 
-.icon-house {
-  background-position: -75px 1px;
-}
-
-.icon-present {
-  margin-left: 167px;
-  background-position: -152px -1px;
-}
 .search {
   padding-top: 33px;
   text-align: center;
