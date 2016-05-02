@@ -1,5 +1,6 @@
 body {
-  font: PT Sans 14px;
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-size: 14px;
   line-height: 21px;
   text-transform: uppercase;
   color: black;
@@ -34,27 +35,35 @@ ul {
   margin: 0;
   padding: 0;
   text-align: left;
-  min-height: 56px;
 }
 
 li {
-  font-size: 14px;
-  font-style: bold;
+  outline: 1px dotted cyan;
   display: inline-block;
-  vertical-align: middle;
-  width: 300px;
+  vertical-align: top;
 }
 
-.main-navigation > ul > li > a {
-  outline: 1px dotted cyan;
+.main-navigation a {
   color: black;
   display: block;
-  padding-top: 18px;
+  width: 227px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   padding-left: 73px;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
+
 }
-.main-navigation > ul > li:nth-child(2) {
-  padding-left: 0;
+
+.main-navigation a:hover {
+  color: #81b3d2;
 }
+
+.main-navigation a:visited {
+  color: #cecece;
+}
+
 .logo {
   width: 138px;
   position: absolute;
