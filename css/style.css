@@ -1,7 +1,4 @@
 @font-face {
-  font-weight: normal;
-  font-style: normal;
-
   font-family: "symbols-sedona";
   src: url("../fonts/symbols-sedona.woff") format("woff"),
        url("../fonts/symbols-sedona.woff2") format("woff2");
@@ -322,7 +319,13 @@ li {
   background-repeat: no-repeat;
   position: absolute;
   left: 486px;
+}
+.search-calender:hover {
+  background-position: center;
+}
 
+.search-calender:active {
+  background-position: bottom;
 }
 
 button.search-minus, button.search-plus {
@@ -443,13 +446,14 @@ button {
 
 
 .sort-item ul {
+  width: 600px
   margin: 0;
   padding: 0;
   text-align: left;
   font-size: 0px;
 }
 
-.sort-item li {
+.sort-item .sort-type-li {
   display: inline-block;
   vertical-align: top;
   width: 82px;
@@ -459,15 +463,11 @@ button {
   text-transform: uppercase;
 }
 
-.sort-item li:nth-child(2) {
+.sort-by-price {
   margin-left: 32px;
 }
 
-.sort-item i {
-  width: 35px;
-}
-
-.sort a {
+.sort-type a {
   color: #cacaca;
   border-bottom: 1px dotted #81b3d2;
   font-size: 12px;
@@ -475,18 +475,52 @@ button {
   text-transform: uppercase;
 }
 
-.sort a:hover {
+.sort-type a:hover {
   color: #89b8d5;
   border-bottom: 1px dotted #81b3d2;
 }
 
-.sort a:active {
+.sort-type a:active {
   color: black;
   border-bottom: 0px;
 }
 
+.sort-icons {
+  font-size: 0px;
+  margin-top: 34px;
+  margin-left: 490px;
+}
+
+.sort-icon-li {
+
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+}
+
+
+
+.icon-up-dir {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  content: "0x25b2";
+  font-size: 21px;
+  line-height: 21px;
+  color: #cccccc;
+}
+
+.icon-down-dir {
+  display: inline-block;
+  vertical-align: middle;
+  width: 21px;
+  content: "0x25bc";
+  font-size: 21px;
+  line-height: 21px;
+  color: #81b3d2;
+}
+
 .hotel-item {
-  outline: 1px dotted blue;
   font-size: 0px;
   border-bottom: 1px solid #e5e5e5;
   padding: 0;
@@ -526,8 +560,6 @@ button {
 }
 
 .hotel-type {
-  outline: 1px dotted red;
-
   display: inline-block;
   vertical-align: top;
   width: 110px;
@@ -537,8 +569,6 @@ button {
 }
 
 .hotel-price {
-  outline: 1px dotted pink;
-
   display: inline-block;
   vertical-align: top;
   width: 142px;
@@ -563,10 +593,13 @@ button {
 }
 
 .hotel-rating {
-  outline: 1px dotted brown;
-
+  outline: 1px dotted red;
   display: inline-block;
   vertical-align: middle;
+}
+
+.hotel-rating span {
+  color: #666666;
   background: #f2f2f2;
   padding-top: 8px;
   padding-bottom: 6px;
@@ -578,21 +611,12 @@ button {
   line-height: 21px;
 }
 
-.sort-up {
-  display: block;
-  width: 0px;
-  height: 0px;
-  border: 5px solid transparent;
-  border-bottom: 7px solid red;
-
-}
-.hotel-rating span {
-  color: #666666;
-}
-
 footer {
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 0;
+}
+
+.footer-on-index {
   position: absolute;
   margin-top: -126;
 }
