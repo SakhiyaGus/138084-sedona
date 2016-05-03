@@ -179,32 +179,36 @@
 
           <div class="search-form">
             <form>
-              <label>
+              <label class="search-date search-date-in">
                 Дата заезда:
-                <input class="search-date" type="date" name="check-in" placeholder="24 апреля 2016">
+                <input class="date-in" type="date" name="check-in" placeholder="24 апреля 2016">
                 <span class="search-calender"></span>
               </label>
-              <label>
+
+              <label class="search-date">
                 Дата выезда:
-                <input class="search-date" type="date" name="check-out" placeholder="4 июля 2016">
+                <input class="date-out" type="date" name="check-out" placeholder="4 июля 2016">
                 <span class="search-calender"></span>
               </label>
-              <label>
+
+              <label for="search-adults">
                 <span class="search-adults">
                 Взрослые:
               </span>
-                <button class="search-minus"></button>
-                <input class="search-person" type="text" name="adults" placeholder="2">
-                <button class="search-plus"></button>
               </label>
-              <label>
+                <button class="search-minus"></button>
+                <input class="search-person" id="search-adults" type="text" name="adults" placeholder="2">
+                <button class="search-plus"></button>
+
+              <label for="search-children">
               <span class="search-child">
                 Дети:
               </span>
-                <button class="search-minus"></button>
-                <input class="search-person" type="text" name="children" placeholder="0">
-                <button class="search-plus"></button>
               </label>
+                <button class="search-minus"></button>
+                <input class="search-person" id="search-children" type="text" name="children" placeholder="0">
+                <button class="search-plus"></button>
+
               <button class="search-find">
                 Найти
               </button>

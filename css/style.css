@@ -259,11 +259,12 @@ li {
   position: absolute;
   top: 0px;
   background: white;
-  width: 511px;
+  width: 459px;
   margin-left: 315px;
   padding-top: 54px;
   padding-bottom: 52px;
-  padding-left: 55px;
+  padding-left: 54px;
+  padding-right: 55px;
   box-shadow: 0 0 10px 0 rgba (0,0,0,0.7);
 }
 
@@ -290,10 +291,25 @@ li {
 }
 
 .search-date {
-  width: 328px;
-  padding-left: 16px;
-  margin-left: 20px;
+  width: 100%;
 }
+
+.search-date-in {
+  margin-left: 2px;
+}
+
+.date-in {
+  margin-left: 20px;
+  padding-left: 15px;
+  width: 331px;
+}
+
+.date-out {
+  margin-left: 18px;
+  padding-left: 12px;
+  width: 334px;
+}
+
 
 .search-person {
   width: 40px;
@@ -483,13 +499,11 @@ button {
 }
 
 .hotel-image {
-  outline: 1px dotted cyan;
-
   display: inline-block;
   vertical-align: middle;
   width: 165px;
   padding-top: 30px;
-  padding-bottom: 20px;
+  padding-bottom: 19px;
   padding-left: 73px;
 
 }
@@ -524,7 +538,7 @@ button {
   width: 110px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 8px;
 }
 
 .hotel-price {
@@ -535,7 +549,7 @@ button {
   width: 142px;
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 8px;
 }
 
 .hotel-type a, .hotel-price a {
@@ -543,10 +557,10 @@ button {
   background: #766357;
   color: white;
   font-weight: bold;
-  padding-left: 10px;
+  padding-left: 16px;
   padding-right: 10px;
-  padding-top: 6px;
-  padding-bottom: 2px;
+  padding-top: 10px;
+  padding-bottom: 8px;
   margin-top: 20px;
 }
 .hotel-type a {
@@ -567,6 +581,15 @@ button {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+}
+
+.sort-up {
+  display: block;
+  width: 0px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-bottom: 7px solid red;
+
 }
 .hotel-rating span {
   color: #666666;
