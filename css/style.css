@@ -498,8 +498,6 @@ button {
   padding: 0;
 }
 
-
-
 .icon-up-dir {
   display: inline-block;
   vertical-align: middle;
@@ -519,6 +517,15 @@ button {
   line-height: 21px;
   color: #81b3d2;
 }
+
+.icon-up-dir:hover, .icon-down-dir:hover {
+  color: black;
+}
+
+.icon-up-dir:active, .icon-down-dir:active {
+  color: #81b3d2;
+}
+
 
 .hotel-item {
   font-size: 0px;
@@ -593,16 +600,30 @@ button {
 }
 
 .hotel-rating {
-  outline: 1px dotted red;
   display: inline-block;
-  vertical-align: middle;
+  vertical-align: top;
+  text-align: right;
+  margin-top: 29px;
+  font-size: 0px;
+}
+
+.icon-star {
+  display: inline-block;
+  vertical-align: top;
+  content: "0x2605";
+  font-size: 18px;
+  line-height: 18px;
+  color: #81b3d2;
+  margin-left: -1px;
 }
 
 .hotel-rating span {
+  display: block;
   color: #666666;
   background: #f2f2f2;
-  padding-top: 8px;
-  padding-bottom: 6px;
+  margin-top: 42px;
+  padding-top: 4px;
+  padding-bottom: 3px;
   padding-left: 16px;
   padding-right: 13px;
   text-align: center;
@@ -610,6 +631,8 @@ button {
   font-size: 14px;
   line-height: 21px;
 }
+
+
 
 footer {
   background-color: rgba(255, 255, 255, 0.8);
