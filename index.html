@@ -179,17 +179,17 @@
 
           <div class="search-form">
             <form>
-              <label class="search-date search-date-in">
+              <label for="date-in" class="search-date">
                 Дата заезда:
-                <input class="date-in" type="date" name="check-in" placeholder="24 апреля 2016">
-                <span class="search-calender"></span>
               </label>
+                <input class="date-in" id="date-in" type="date" name="check-in" placeholder="24 апреля 2016">
+                <span class="search-calender"></span>
 
-              <label class="search-date">
+              <label for="date-out" class="search-date">
                 Дата выезда:
-                <input class="date-out" type="date" name="check-out" placeholder="4 июля 2016">
-                <span class="search-calender"></span>
               </label>
+                <input class="date-out" id="date-out" type="date" name="check-out" placeholder="4 июля 2016">
+                <span class="search-calender"></span>
 
               <label for="search-adults">
                 <span class="search-adults">
@@ -200,8 +200,8 @@
                 <input class="search-person" id="search-adults" type="text" name="adults" placeholder="2">
                 <button class="search-plus"></button>
 
-              <label for="search-children">
-              <span class="search-child">
+              <label class="search-child" for="search-children">
+              <span>
                 Дети:
               </span>
               </label>

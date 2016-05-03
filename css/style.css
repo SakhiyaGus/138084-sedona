@@ -268,9 +268,14 @@ li {
   box-shadow: 0 0 10px 0 rgba (0,0,0,0.7);
 }
 
+.search-form form {
+  font-size: 0;
+}
+
 .search-form label {
   display: inline-block;
   vertical-align: middle;
+  width: 112px;
   font-size: 14px;
   line-height: 38px;
   font-weight: bold;
@@ -290,31 +295,34 @@ li {
   color: black;
 }
 
-.search-date {
-  width: 100%;
-}
-
-.search-date-in {
-  margin-left: 2px;
-}
-
 .date-in {
-  margin-left: 20px;
+  display: inline-block;
+  vertical-align: top;
   padding-left: 15px;
   width: 331px;
 }
 
 .date-out {
-  margin-left: 18px;
+  display: inline-block;
+  vertical-align: top;
   padding-left: 12px;
   width: 334px;
 }
 
-
 .search-person {
-  width: 40px;
-  margin-left: -4px;
+  width: 38px;
   text-align: center;
+}
+
+.search-calender {
+  width: 21px;
+  height: 38px;
+  display: inline-block;
+  background-image: url(../img/calender-icon.png);
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 486px;
+
 }
 
 button.search-minus, button.search-plus {
@@ -332,7 +340,6 @@ button.search-minus, button.search-plus {
 }
 
 button.search-minus {
-  margin-left: 25px;
   background-position: -38px 0;
 }
 
@@ -344,11 +351,6 @@ button.search-minus:active {
   background-position: -38px -76px;
 }
 
-button.search-plus {
-  margin-left: -4px;
-  margin-right: 20px;
-}
-
 button.search-plus:hover {
   background-position: 0 -38;
 }
@@ -357,16 +359,9 @@ button.search-plus:active {
   background-position: 0 -76px;
 }
 
-span.search-adults {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 14px;
-}
-
-span.search-child {
-  display: inline-block;
-  vertical-align: middle;
-  margin-left: 22px;
+form label.search-child {
+  width: 62px;
+  padding-left: 53px;
 }
 
 button.search-find {
