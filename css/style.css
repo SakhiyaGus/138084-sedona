@@ -471,7 +471,6 @@ input[type="checkbox"]:disabled + label.checkbox::before {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 button {
   display: block;
 }
@@ -617,7 +616,6 @@ button {
   margin-bottom: 33px;
 }
 
-
 .sort-item ul {
   width: 600px
   margin: 0;
@@ -658,9 +656,9 @@ button {
   border-bottom: 0px;
 }
 
-li.sort-active a {
-  colore: #81b3d2;
-  text-decoration: none;
+.sort-active a, .sort-active a:hover, .sort-active a:active {
+  color: #81b3d2;
+  border: none;
 }
 
 .sort-icons {
@@ -693,7 +691,7 @@ li.sort-active a {
   content: "0x25bc";
   font-size: 21px;
   line-height: 21px;
-  color: #81b3d2;
+  color: #cccccc;
 }
 
 .icon-up-dir:hover, .icon-down-dir:hover {
@@ -704,6 +702,9 @@ li.sort-active a {
   color: #81b3d2;
 }
 
+.active-dir, .active-dir:hover, .active-dir:active {
+  color: #81b3d2;
+}
 
 .hotel-item {
   font-size: 0px;
