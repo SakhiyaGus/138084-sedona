@@ -40,15 +40,15 @@
             Инфраструктура:
           </h2>
           <label>
-            <input type="checkbox" checked value="pool">
+            <input class="icon-check-on" type="checkbox" checked value="pool">
               Бассейн
           </label>
           <label>
-            <input type="checkbox" value="parking">
+            <input class="icon-check-off" type="checkbox" value="parking">
               Парковка
           </label>
           <label>
-            <input type="checkbox" value="wi-fi">
+            <input class="icon-check-off" type="checkbox" value="wi-fi">
               Wi-Fi
           </label>
         </div>
@@ -58,33 +58,39 @@
             Тип жилья:
           </h2>
           <label>
-            <input type="checkbox" checked value="hotel">
+            <input class="icon-check-on" type="checkbox" checked value="hotel">
               Гостиница
           </label>
           <label>
-            <input type="checkbox" checked value="motel">
+            <input class="icon-check-on" type="checkbox" checked value="motel">
               Мотель
           </label>
           <label>
-            <input type="checkbox" checked value="apartments">
+            <input class="icon-check-on" type="checkbox" checked value="apartments">
               Апартаменты
           </label>
         </div>
 
-        <div class="list">
+        <div class=" list filter-hotels">
           <h2>
             Стоимость в сутки (Р):
           </h2>
-          <label>
-            от <input type="text" placeholder="0">
+          <div class="filter-price">
+          <label class="min-price">
+            от <input type="text" name="min-price" id="min-price" value="0">
           </label>
-          <label>
-            до <input type="text" placeholder="3000">
+          <label class="max-price">
+            до <input type="text" name="max-price" id="max-price" value="3000">
           </label>
-          <label>
-            <input type="range" min="0" max="100" step="1" value="70">
-          </label>
-          <button type="submit">
+        </div>
+        <div class="filter-range">
+          <div class="scale">
+            <div class="bar"></div>
+            <div class="filter-toggle filter-toggle-min"></div>
+            <div class="filter-toggle filter-toggle-max"></div>
+          </div>
+        </div>
+          <button class="filter-btn" type="submit">
             Показать
           </button>
         </div>

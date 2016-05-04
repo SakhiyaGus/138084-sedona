@@ -388,6 +388,8 @@ button.search-find {
 .features-lists {
   background: #63696f url(../img/background-hotels.jpg);
   padding-top: 14px;
+  padding-left: 73px;
+  padding-right: 73px;
 }
 
 .list {
@@ -399,17 +401,12 @@ button.search-find {
   color: white;
 }
 
-.list:nth-child(1) {
-  padding-left: 73px;
+.list:first-child {
+  width: 256px;
 }
 
 .list:nth-child(2) {
-  padding-left: 15px;
-}
-
-.list:nth-child(3) {
-  width: 400px;
-  margin-left: 232px;
+  width: 470px;
 }
 
 .list label {
@@ -418,12 +415,131 @@ button.search-find {
   padding-bottom: 13px;
 }
 
-.list h2 {
-  font-size: 16px;
-}
-
 button {
   display: block;
+}
+
+.filter-hotels {
+  width: 328px;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: normal;
+  color: white;
+}
+
+.filter-hotels h2 {
+  font-size: 16px;
+  line-height: 21px;
+  margin-bottom: 10px
+}
+
+.filter-price {
+  width: 316px;
+  height: 32px;
+  margin-left: 11px;
+  margin-bottom: 20px;
+  border: 2px solid white;
+  border-radius: 2px;
+  font-size: 0;
+  position: relative;
+}
+
+.filter-price::after {
+  content:"";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 2px;
+  height: 22px;
+  background: white;
+}
+
+.filter-price label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+  line-height: 32px;
+  cursor: pointer;
+}
+
+.filter-price .min-price,
+.filter-price .max-price {
+  width: 90;
+  padding-left: 65px;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.filter-price input {
+  width: 50px;
+  margin: 0;
+  background: none;
+  border: none;
+  outline: none;
+  font: inherit;
+  color: inherit;
+}
+
+.filter-range {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.filter-range .scale {
+  width: 316px;
+  margin-left: 14px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.filter-range .bar {
+  height: 2px;
+  width: 80%;
+  background: white;
+}
+
+.filter-toggle {
+  width: 4px;
+  height: 4px;
+  background: #ababab;
+  border: 8px solid white;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+  position: absolute;
+  top: -9px;
+}
+
+.filter-toggle:hover {
+  background: #1c4f80;
+}
+
+.filter-toggle-min {
+  left: 11px;
+}
+
+.filter-toggle-max {
+  left: 80%;
+}
+
+.filter-btn {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 33px;
+  padding: 6px 35px;
+  background: transparent;
+  border: 2px solid white;
+  outline: none;
+  font-size: 14px;
+  line-height: 20px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.filter-btn:hover {
+  color: black;
+  background: white;
 }
 
 .sort {
