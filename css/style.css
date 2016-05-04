@@ -505,6 +505,8 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
   width: 2px;
   height: 22px;
@@ -832,7 +834,9 @@ button {
   line-height: 21px;
 }
 
-
+iframe {
+  border: none;
+}
 
 footer {
   background-color: rgba(255, 255, 255, 0.8);
@@ -906,30 +910,37 @@ footer {
 }
 
 .academy a {
-  display: block;
-  width: 195px;
+  display: inline-block;
+  vertical-align: middle;
+  width: 82px;
   font-size: 14px;
   line-height: 26px;
   font-weight: normal;
   color: black;
   text-align: left;
   padding-top: 7px;
-  padding-bottom: 6px;
+  padding-bottom: 7px;
+  padding-right: 113px;
   margin-left: 102px;
   margin-top: 4px;
   background-image: url(../img/academy-logo.png);
   background-repeat: no-repeat;
-  background-position: 82 0;
+  background-position: top right;
 }
 
 .academy a:hover {
   background-image: url(../img/academy-logo.png);
   background-repeat: no-repeat;
-  background-position: 82 -39;
+  background-position: 82px -42px;
 }
 
 .academy a:active {
   background-image: url(../img/academy-logo.png);
   background-repeat: no-repeat;
-  background-position: 82 -78;
+  background-position: 82px -84px;
+}
+
+.academy span {
+  display: inline-block;
+  vertical-align: top;
 }
