@@ -455,14 +455,6 @@ label.checkbox::before {
   width: 28px;
 }
 
-label.checkbox::before:disabled {
-  content: "\2610";
-  font-family: "symbols-sedona";
-  font-size: 27px;
-  color: rgba(255, 255, 255, 0.5);
-
-}
-
 input[type="checkbox"]:checked + label.checkbox::before {
   content: "\2611";
   font-family: "symbols-sedona";
@@ -472,11 +464,11 @@ input[type="checkbox"]:checked + label.checkbox::before {
   width: 28px;
 }
 
-input[type="checkbox"]:checked + label.checkbox::before:disabled {
+input[type="checkbox"]:disabled + label.checkbox::before {
   content: "\2611";
   font-family: "symbols-sedona";
   font-size: 27px;
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.3);
 }
 
 
