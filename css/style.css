@@ -328,6 +328,15 @@ li {
   background-position: bottom;
 }
 
+.search-form input:hover {
+  background: #ebebeb;
+}
+
+.search-form input:active {
+  background: white;
+  outline: 2px solid #e5e5e5;
+}
+
 button.search-minus, button.search-plus {
   display: inline-block;
   vertical-align: top;
@@ -379,6 +388,15 @@ button.search-find {
   font-weight: bold;
   text-transform: uppercase;
   color: white;
+}
+
+button.search-find:hover {
+  background: #669ec0;
+}
+
+button.search-find:active {
+  color: #94b9d2;
+  background: #5496bd;
 }
 
 .features-lists, .sort {
