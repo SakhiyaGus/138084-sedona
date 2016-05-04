@@ -368,7 +368,7 @@ button.search-minus:active {
 }
 
 button.search-plus:hover {
-  background-position: 0 -38;
+  background-position: 0 -38px;
 }
 
 button.search-plus:active {
@@ -845,7 +845,7 @@ footer {
 
 .footer-on-index {
   position: absolute;
-  margin-top: -126;
+  margin-top: -126px;
 }
 
 .hashtag, .social-item, .academy {
