@@ -415,6 +415,49 @@ button.search-find {
   padding-bottom: 13px;
 }
 
+.list h2 {
+  font-size: 16px;
+  line-height: 21px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+label.checkbox::before {
+  content: "\2610";
+  font-family: "symbols-sedona";
+  font-size: 27px;
+  display: inline-block;
+  vertical-align: top;
+  width: 28px;
+}
+
+label.checkbox::before:disabled {
+  content: "\2610";
+  font-family: "symbols-sedona";
+  font-size: 27px;
+  color: rgba(255, 255, 255, 0.5);
+
+}
+
+input[type="checkbox"]:checked + label.checkbox::before {
+  content: "\2611";
+  font-family: "symbols-sedona";
+  font-size: 27px;
+  display: inline-block;
+  vertical-align: top;
+  width: 28px;
+}
+
+input[type="checkbox"]:checked + label.checkbox::before:disabled {
+  content: "\2611";
+  font-family: "symbols-sedona";
+  font-size: 27px;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
 button {
   display: block;
 }
@@ -711,8 +754,29 @@ button {
   padding-bottom: 8px;
   margin-top: 20px;
 }
+
 .hotel-type a {
   background: #81b3d2;
+}
+
+.hotel-type a:hover {
+  color: white;
+  background: #669ec0;
+}
+
+.hotel-type a:active {
+  color: #94b9d2;
+  background: #5496bd;
+}
+
+.hotel-price a:hover {
+  color: white;
+  background: #604e43;
+}
+
+.hotel-price a:active {
+  color: #928a85;
+  background: #503e33;
 }
 
 .hotel-rating {
