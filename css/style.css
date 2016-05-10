@@ -295,16 +295,21 @@ li {
     position: relative;
 }
 .search-form {
-    position: absolute;
-    top: 0px;
-    background: white;
-    width: 459px;
-    margin-left: 315px;
-    padding-top: 54px;
-    padding-bottom: 52px;
-    padding-left: 54px;
-    padding-right: 55px;
-    box-shadow: 0 0 10px 0 rgba (0, 0, 0, 0.7);
+    display: none;
+}
+
+.search-form-show {
+  display: block;
+  position: absolute;
+  top: 0px;
+  background: white;
+  width: 457px;
+  margin-left: 315px;
+  padding-top: 54px;
+  padding-bottom: 52px;
+  padding-left: 54px;
+  padding-right: 55px;
+  box-shadow: 0 0 10px 0 rgba (0, 0, 0, 0.7);
 }
 .search-form form {
     font-size: 0;
@@ -330,6 +335,7 @@ li {
     text-transform: uppercase;
     color: black;
 }
+
 .date-in {
     display: inline-block;
     vertical-align: top;
