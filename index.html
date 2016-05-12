@@ -183,13 +183,13 @@
                     <label for="date-in" class="search-date">
                         Дата заезда:
                     </label>
-                    <input class="date-in" id="date-in" type="text" name="check-in" value="24 апреля 2016">
+                    <input class="date-in" id="date-in" type="text" name="check-in" value="24 апреля 2016" required>
                     <span class="search-calender"></span>
 
                     <label for="date-out" class="search-date">
                         Дата выезда:
                     </label>
-                    <input class="date-out" id="date-out" type="text" name="check-out" value="4 июля 2016">
+                    <input class="date-out" id="date-out" type="text" name="check-out" value="4 июля 2016" required>
                     <span class="search-calender"></span>
 
                     <label for="search-adults">
@@ -198,7 +198,7 @@
               </span>
                     </label>
                     <button class="search-minus"></button>
-                    <input class="search-person" id="search-adults" type="text" name="adults" placeholder="2">
+                    <input class="search-person" id="search-adults" type="text" name="adults" placeholder="2" required>
                     <button class="search-plus"></button>
 
                     <label class="search-child" for="search-children">
@@ -207,7 +207,7 @@
               </span>
                     </label>
                     <button class="search-minus"></button>
-                    <input class="search-person" id="search-children" type="text" name="children" placeholder="0">
+                    <input class="search-person" id="search-children" type="text" name="children" placeholder="0" required>
                     <button class="search-plus"></button>
 
                     <button class="search-find">
@@ -238,10 +238,11 @@
     </div>
 
 <script>
-  var search = querySelector(".search-hotels");
-  var form = querySelector(".search-form");
-  search.addEventListener("click", function(){
-    form.classList.add(".search-form-show")
+  var search = document.querySelector(".search-hotels");
+  var form = document.querySelector(".search-form");
+  search.addEventListener("click", function(event){
+    event.preventDefault();
+    form.classList.add("search-form-show");
   });
 
 </script>

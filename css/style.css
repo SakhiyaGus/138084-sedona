@@ -109,6 +109,12 @@ a:link {
     margin: 0 auto;
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.3);
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 .logo {
     width: 138px;
     position: absolute;
@@ -296,28 +302,29 @@ li {
 }
 .search-form {
     display: none;
+    position: absolute;
+    top: 0px;
+    background: white;
+    width: 457px;
+    margin-left: 315px;
+    padding-top: 54px;
+    padding-bottom: 52px;
+    padding-left: 54px;
+    padding-right: 55px;
+    box-shadow: 0 0 10px 0 rgba (0, 0, 0, 0.7);
 }
 
 .search-form-show {
   display: block;
-  position: absolute;
-  top: 0px;
-  background: white;
-  width: 457px;
-  margin-left: 315px;
-  padding-top: 54px;
-  padding-bottom: 52px;
-  padding-left: 54px;
-  padding-right: 55px;
-  box-shadow: 0 0 10px 0 rgba (0, 0, 0, 0.7);
 }
+
 .search-form form {
     font-size: 0;
 }
 .search-form label {
     display: inline-block;
     vertical-align: middle;
-    width: 112px;
+    width: 110px;
     font-size: 14px;
     line-height: 38px;
     font-weight: bold;
@@ -359,7 +366,7 @@ li {
     background-image: url(../img/calender-icon.png);
     background-repeat: no-repeat;
     position: absolute;
-    left: 486px;
+    left: 484px;
 }
 .search-calender:hover {
     background-position: center;
