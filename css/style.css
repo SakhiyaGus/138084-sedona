@@ -300,6 +300,17 @@ li {
 .map {
     position: relative;
 }
+
+.search-form-close {
+    position: absolute;
+    top: 0;
+    width:22px;
+    left: 544px;
+    border: none;
+    background-color: #cecece;
+    color: red;
+}
+
 .search-form {
     display: none;
     position: absolute;
