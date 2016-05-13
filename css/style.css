@@ -135,12 +135,14 @@ li {
     display: inline-block;
     vertical-align: top;
 }
+
+.main-navigation li {
+  width: 240px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
 .main-navigation a {
     color: black;
-    display: block;
-    width: 240px;
-    padding-top: 15px;
-    padding-bottom: 15px;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
