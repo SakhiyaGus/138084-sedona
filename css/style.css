@@ -225,7 +225,8 @@ li {
     color: black;
     padding-top: 32px;
     padding-bottom: 44px;
-}
+  }
+
 .reasons-grey h2,
 .reasons-grey span,
 .reasons-grey p {
@@ -297,6 +298,8 @@ li {
     padding-top: 30px;
     padding-bottom: 32px;
 }
+
+
 .map {
     position: relative;
 }
@@ -313,12 +316,6 @@ li {
     padding-left: 54px;
     padding-right: 55px;
     box-shadow: 0 0 10px 0 rgba (0, 0, 0, 0.7);
-}
-
-@-ms-keyframes show {
-  30% {-ms-transform: translateY(50px);}
-  60% {-ms-transform: translateY(100px);}
-  100% {-ms-transform: translateY(0px);}
 }
 
 @-webkit-keyframes show {
@@ -724,6 +721,7 @@ button {
     font-size: 0px;
     border-bottom: 1px solid #e5e5e5;
     padding: 0;
+    padding-bottom: 30px;
     margin: 0;
 }
 .hotel-image {
