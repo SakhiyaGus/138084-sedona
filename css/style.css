@@ -639,7 +639,8 @@ button {
     margin-bottom: 33px;
 }
 .sort-item ul {
-    width: 600px margin: 0;
+    width: 600px;
+    margin: 0;
     padding: 0;
     text-align: left;
     font-size: 0px;
