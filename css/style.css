@@ -369,13 +369,15 @@ li {
     display: inline-block;
     vertical-align: top;
     padding-left: 15px;
-    width: 331px;
+    padding-right: 40px;
+    width: 291px;
 }
 .date-out {
     display: inline-block;
     vertical-align: top;
     padding-left: 12px;
-    width: 334px;
+    padding-right: 40px;
+    width: 294px;
 }
 .search-person {
     width: 38px;
@@ -654,7 +656,7 @@ button {
   width: 846px;
 }
 
-.sort-item .sort-type li {
+.sort-type li {
     display: inline-block;
     vertical-align: top;
     width: 82px;
