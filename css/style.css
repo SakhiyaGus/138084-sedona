@@ -302,6 +302,7 @@ li {
 
 .map {
     position: relative;
+    background-image: url(../img/sedona-map.png);
 }
 
 .search-form {
