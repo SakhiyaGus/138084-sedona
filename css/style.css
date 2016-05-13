@@ -399,7 +399,7 @@ li {
 .search-form input:hover {
     background: #ebebeb;
 }
-.search-form input:active {
+.search-form input:focus {
     background: white;
     outline: 2px solid #e5e5e5;
 }
