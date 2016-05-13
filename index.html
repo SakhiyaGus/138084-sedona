@@ -239,24 +239,7 @@
 
     </div>
 
-<script>
-  var search = document.querySelector(".search-hotels");
-  var form = document.querySelector(".search-form");
-  var close = document.querySelector(".search-form-close");
-  var date = form.querySelector(".date-in");
-
-  search.addEventListener("click", function(event){
-    event.preventDefault();
-    form.classList.add("search-form-show");
-    date.focus();
-  });
-
-  close.addEventListener("click", function(event) {
-    event.preventDefault();
-    form.classList.remove("search-form-show");
-  })
-
-</script>
+<script src="js/form.js"></script>
 </body>
 
 </html>
