@@ -302,6 +302,7 @@ li {
 
 .map {
     position: relative;
+    background: #cae0a8;
     background-image: url(../img/sedona-map.png);
 }
 
@@ -333,8 +334,8 @@ li {
 
 .search-form-show {
   display: block;
-  animation: "show" 0.6s;
   -webkit-animation: "show" 0.6s;
+  animation: "show" 0.6s;
 }
 
 .search-form form {
@@ -524,8 +525,11 @@ button {
 .filter-hotels h2 {
     font-size: 16px;
     line-height: 21px;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    cursor: pointer;
 }
+
+
 .filter-price {
     width: 316px;
     height: 32px;
@@ -553,7 +557,6 @@ button {
     vertical-align: top;
     font-size: 14px;
     line-height: 32px;
-    cursor: pointer;
 }
 .filter-price .min-price,
 .filter-price .max-price {
@@ -639,12 +642,16 @@ button {
     margin-bottom: 33px;
 }
 .sort-item ul {
-    width: 600px;
     margin: 0;
     padding: 0;
     text-align: left;
     font-size: 0px;
 }
+
+.sort-type {
+  width: 846px;
+}
+
 .sort-item .sort-type li {
     display: inline-block;
     vertical-align: top;
@@ -672,6 +679,7 @@ button {
     color: black;
     border-bottom: 0px;
 }
+
 .sort-active a,
 .sort-active a:hover,
 .sort-active a:active {
@@ -679,14 +687,15 @@ button {
     border: none;
 }
 .sort-icons {
+    display: inline-block;
+    vertical-align: top;
     font-size: 0px;
-    margin-top: 34px;
-    margin-left: 490px;
 }
 .sort-icon-li {
     display: inline-block;
     vertical-align: middle;
     padding: 0;
+    margin-top: 34px;
 }
 .icon-up-dir {
     display: inline-block;
