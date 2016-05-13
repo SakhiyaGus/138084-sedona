@@ -301,16 +301,6 @@ li {
     position: relative;
 }
 
-.search-form-close {
-    position: absolute;
-    top: 0;
-    width:22px;
-    left: 544px;
-    border: none;
-    background-color: #cecece;
-    color: red;
-}
-
 .search-form {
     display: none;
     position: absolute;
@@ -325,15 +315,28 @@ li {
     box-shadow: 0 0 10px 0 rgba (0, 0, 0, 0.7);
 }
 
+@-ms-keyframes show {
+  30% {-ms-transform: translateY(50px);}
+  60% {-ms-transform: translateY(100px);}
+  100% {-ms-transform: translateY(0px);}
+}
+
+@-webkit-keyframes show {
+  30% {-webkit-transform: translateY(50px);}
+  60% {-webkit-transform: translateY(100px);}
+  100% {-webkit-transform: translateY(0px);}
+}
+
 @keyframes show {
-  60% {transform: translateY(200px);}
+  30% {transform: translateY(50px);}
+  60% {transform: translateY(100px);}
   100% {transform: translateY(0px);}
 }
 
 .search-form-show {
   display: block;
-  animation-name: "show";
-  animation-duration: 0.6s;
+  animation: "show" 0.6s;
+  -webkit-animation: "show" 0.6s;
 }
 
 .search-form form {
