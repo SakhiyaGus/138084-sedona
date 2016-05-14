@@ -876,9 +876,13 @@ footer {
     display: inline-block;
     vertical-align: top;
     width: 400px;
-    text-align: center;
     padding-top: 36px;
     padding-bottom: 44px;
+}
+
+.hashtag,
+.social-item {
+  text-align: center;
 }
 .hashtag a {
     display: block;
