@@ -963,3 +963,7 @@ footer {
     display: inline-block;
     vertical-align: top;
 }
+
+.logo a {
+  display: block;
+}
