@@ -114,7 +114,9 @@ img {
   max-width: 100%;
   height: auto;
 }
-
+header {
+  position: relative;
+}
 .logo {
     width: 138px;
     position: absolute;
@@ -139,7 +141,7 @@ li {
 .main-navigation li {
   width: 240px;
   padding-top: 15px;
-  padding-bottom: 15px;
+  padding-bottom: 14px;
 }
 .main-navigation a {
     color: black;
@@ -322,22 +324,29 @@ li {
     box-shadow: 0 0 10px 0 rgba (0, 0, 0, 0.7);
 }
 
+
 @-webkit-keyframes show {
-  30% {-webkit-transform: translateY(50px);}
-  60% {-webkit-transform: translateY(100px);}
-  100% {-webkit-transform: translateY(0px);}
+    30% {-webkit-transform: translateY(50px);
+         transform: translateY(50px);}
+    60% {-webkit-transform: translateY(100px);
+         transform: translateY(100px);}
+    100% {-webkit-transform: translateY(0px);
+          transform: translateY(0px);}
 }
 
 @keyframes show {
-  30% {transform: translateY(50px);}
-  60% {transform: translateY(100px);}
-  100% {transform: translateY(0px);}
+    30% {-webkit-transform: translateY(50px);
+         transform: translateY(50px);}
+    60% {-webkit-transform: translateY(100px);
+         transform: translateY(100px);}
+    100% {-webkit-transform: translateY(0px);
+          transform: translateY(0px);}
 }
 
 .search-form-show {
-  display: block;
-  -webkit-animation: "show" 0.6s;
-  animation: "show" 0.6s;
+    display: block;
+    -webkit-animation: show 0.6s;
+    animation: show 0.6s;
 }
 
 .search-form form {
@@ -357,12 +366,13 @@ li {
     display: inline-block;
     vertical-align: top;
     background: #f2f2f2;
-    border: none;
+    border: 2px solid #f2f2f2;
     font-size: 14px;
-    line-height: 36px;
+    line-height: 34px;
     font-weight: bold;
     text-transform: uppercase;
     color: black;
+    max-height: 34px;
 }
 
 .date-in {
@@ -370,27 +380,28 @@ li {
     vertical-align: top;
     padding-left: 15px;
     padding-right: 40px;
-    width: 291px;
+    width: 287px;
 }
 .date-out {
     display: inline-block;
     vertical-align: top;
     padding-left: 12px;
     padding-right: 40px;
-    width: 294px;
+    width: 290px;
 }
 .search-person {
-    width: 38px;
+    width: 34px;
+    height: 34px;
     text-align: center;
 }
 .search-calender {
     width: 21px;
-    height: 38px;
+    height: 34px;
     display: inline-block;
     background-image: url(../img/calender-icon.png);
     background-repeat: no-repeat;
     position: absolute;
-    left: 484px;
+    left: 478px;
 }
 .search-calender:hover {
     background-position: center;
@@ -400,20 +411,21 @@ li {
 }
 .search-form input:hover {
     background: #ebebeb;
+    border: 2px solid #ebebeb;
 }
 .search-form input:focus {
     background: white;
-    outline: 2px solid #e5e5e5;
+    border: 2px solid #e5e5e5;
 }
 button.search-minus,
 button.search-plus {
     display: inline-block;
     vertical-align: top;
     width: 38px;
-    height: 38px;
+    height: 40px;
     background-image: url(../img/plus-minus.png);
     background-repeat: no-repeat;
-    border: none;
+    border: 2px solid #f2f2f2;
     outline: none;
     padding: 0;
     margin: 0;
@@ -485,7 +497,7 @@ button.search-find:active {
 .list label {
     display: block;
     padding-top: 12px;
-    padding-bottom: 13px;
+    padding-bottom: 12px;
 }
 .list h2 {
     font-size: 16px;
@@ -497,23 +509,23 @@ input[type="checkbox"] {
 label.checkbox::before {
     content: "\2610";
     font-family: "symbols-sedona";
-    font-size: 27px;
+    font-size: 26px;
     display: inline-block;
     vertical-align: top;
-    width: 28px;
+    width: 34px;
 }
 input[type="checkbox"]:checked + label.checkbox::before {
     content: "\2611";
     font-family: "symbols-sedona";
-    font-size: 27px;
+    font-size: 26px;
     display: inline-block;
     vertical-align: top;
-    width: 28px;
+    width: 34px;
 }
 input[type="checkbox"]:disabled + label.checkbox::before {
     content: "\2611";
     font-family: "symbols-sedona";
-    font-size: 27px;
+    font-size: 26px;
     color: rgba(255, 255, 255, 0.3);
 }
 button {
@@ -532,7 +544,6 @@ button {
     margin-bottom: 10px;
     cursor: pointer;
 }
-
 
 .filter-price {
     width: 316px;
@@ -564,11 +575,13 @@ button {
 }
 .filter-price .min-price,
 .filter-price .max-price {
-    width: 90;
-    padding-left: 65px;
+    width: 93px;
     padding-top: 0;
     padding-bottom: 0;
-}
+    padding-left: 55px;
+    text-align: center;
+  }
+
 .filter-price input {
     width: 50px;
     margin: 0;
@@ -642,8 +655,8 @@ button {
     font-size: 21px;
     width: 163px;
     padding-left: 73px;
-    margin-top: 33px;
-    margin-bottom: 33px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 .sort-item ul {
     margin: 0;
@@ -736,7 +749,6 @@ button {
     font-size: 0px;
     border-bottom: 1px solid #e5e5e5;
     padding: 0;
-    padding-bottom: 30px;
     margin: 0;
 }
 .hotel-image {
@@ -753,8 +765,11 @@ button {
     width: 782px;
     font-weight: bold;
     font-size: 21px;
-    line-height: 21px;
     padding-top: 11px;
+}
+
+.hotel-name h2 {
+  line-height: 19px;
 }
 .hotel-name a {
     color: black;
@@ -772,6 +787,7 @@ button {
     font-weight: normal;
     font-size: 14px;
     line-height: 8px;
+    padding-bottom: 30px;
 }
 .hotel-price {
     display: inline-block;
@@ -780,6 +796,7 @@ button {
     font-weight: normal;
     font-size: 14px;
     line-height: 8px;
+    padding-bottom: 30px;
 }
 .hotel-type a,
 .hotel-price a {
