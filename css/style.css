@@ -373,6 +373,11 @@ li {
     text-transform: uppercase;
     color: black;
     max-height: 34px;
+    min-height: 34px;
+}
+
+.search-dates {
+  position: relative;
 }
 
 .date-in {
